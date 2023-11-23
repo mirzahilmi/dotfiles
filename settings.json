@@ -1,0 +1,119 @@
+{
+    // <================ Typography ================>
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0.5,
+    // <================ Terminal ================>
+    "terminal.integrated.profiles.windows": {
+        "Ubuntu-22.04 (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    // <================ Workbench ================>
+    "workbench.colorTheme": "Atom Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 1,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.showTabs": "single",
+    "workbench.layoutControl.type": "menu",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#23292d",
+        "statusBar.noFolderBackground": "#23292d"
+    },
+    // <================ Editor ================>
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderLineHighlight": "none",
+    "editor.renderControlCharacters": false,
+    "editor.scrollbar.verticalScrollbarSize": 2,
+    "editor.scrollbar.horizontalScrollbarSize": 2,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.cursorWidth": 3,
+    "editor.minimap.enabled": false,
+    "editor.showFoldingControls": "never",
+    "editor.glyphMargin": false,
+    "editor.rulers": [
+        100
+    ],
+    "explorer.openEditors.visible": 1,
+    "breadcrumbs.enabled": false,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "git.enableCommitSigning": true,
+    // <================ Formatter ================>
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "[java]": {
+        "editor.defaultFormatter": null,
+        "editor.formatOnSave": false
+    },
+    // <================ Extension ================>
+    // <---------------- Discord ----------------->
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.idle.check": false,
+    "vscord.status.idle.enabled": false,
+    "vscord.status.state.text.editing": "Working on {file_name}{file_extension}:{current_line}/{line_count}",
+    "vscord.status.problems.text": "- {problems_count} problems",
+    // <---------------- PHPfmt ----------------->
+    "phpfmt.passes": [
+        "AllmanStyleBraces",
+        "AlignDoubleArrow",
+        "DoubleToSingleQuote",
+        "OrderAndRemoveUseClauses",
+        "PSR2EmptyFunction",
+        "ReindentSwitchBlocks",
+        "ReplaceIsNull",
+        "MergeElseIf",
+        "SortUseNameSpace",
+        "SpaceBetweenMethods",
+        "MergeNamespaceWithOpenTag"
+    ],
+    "phpfmt.exclude": [
+        "AlignDoubleSlashComments",
+        "StripSpaces",
+        "AutoSemicolon",
+        "AlignEquals",
+        "AlignTypehint",
+        "AllmanStyleBraces",
+        "ConvertOpenTagWithEcho",
+        "DocBlockToComment",
+        "IndentTernaryConditions"
+    ],
+    "java.debug.settings.showStaticVariables": true,
+    "intelephense.telemetry.enabled": false,
+    // <---------------- SQLTools ----------------->
+    "sqltools.results.customization": {
+        "font-size": "12.5px"
+    },
+    "workbench.activityBar.location": "hidden"
+}
