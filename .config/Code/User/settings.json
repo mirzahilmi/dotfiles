@@ -1,53 +1,19 @@
 {
     // <================ Typography ================>
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font'",
+    "editor.fontFamily": "JetBrains Mono",
+    // "editor.fontFamily": "CaskaydiaCove Nerd Font",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
+    "editor.fontWeight": "500",
     "editor.lineHeight": 1.5,
     "editor.letterSpacing": 0.5,
     // <================ Terminal ================>
-    "terminal.integrated.profiles.windows": {
-        "Ubuntu-22.04 (WSL)": {
-            "path": "C:\\Windows\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
-        },
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.persistentSessionReviveProcess": "never",
-    // <================ Workbench ================>
-    "workbench.colorTheme": "Atom Material Theme",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 1,
-    "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.showTabs": "single",
-    "workbench.layoutControl.type": "menu",
-    "workbench.layoutControl.enabled": false,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#23292d",
-        "statusBar.noFolderBackground": "#23292d"
-    },
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     // <================ Editor ================>
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     "editor.formatOnSave": true,
-    "editor.renderWhitespace": "none",
     "editor.renderLineHighlight": "none",
     "editor.renderControlCharacters": false,
     "editor.scrollbar.verticalScrollbarSize": 2,
@@ -56,19 +22,39 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
-    "editor.cursorWidth": 3,
     "editor.minimap.enabled": false,
     "editor.showFoldingControls": "never",
     "editor.glyphMargin": false,
     "editor.rulers": [
         100
     ],
+    "workbench.activityBar.location": "hidden",
+    "window.titleBarStyle": "custom",
     "explorer.openEditors.visible": 1,
+    "window.menuBarVisibility": "compact",
+    "files.autoSave": "onFocusChange",
+    "extensions.ignoreRecommendations": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 5,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.layoutControl.type": "menu",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorCustomizations": {
+        "[Atom Material Theme]": {
+            "statusBar.background": "#23292d",
+            "statusBar.noFolderBackground": "#23292d"
+        },
+        "[Gruvbox Dark Hard]": {
+            "editorGroupHeader.noTabsBackground": "#1d2021"
+        }
+    },
     "breadcrumbs.enabled": false,
-    "security.allowedUNCHosts": [
-        "wsl.localhost"
-    ],
-    "git.enableCommitSigning": true,
+    "editor.matchBrackets": "never",
+    "editor.roundedSelection": false,
+    "explorer.compactFolders": false,
+    "editor.wordWrap": "off",
     // <================ Formatter ================>
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt"
@@ -76,6 +62,9 @@
     "[java]": {
         "editor.defaultFormatter": null,
         "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome"
     },
     // <================ Extension ================>
     // <---------------- Discord ----------------->
@@ -111,9 +100,12 @@
     ],
     "java.debug.settings.showStaticVariables": true,
     "intelephense.telemetry.enabled": false,
-    // <---------------- SQLTools ----------------->
-    "sqltools.results.customization": {
-        "font-size": "12.5px"
-    },
-    "workbench.activityBar.location": "hidden"
+    // <---------------- Pets ----------------->
+    "vscode-pets.petColor": "white",
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.theme": "castle",
+    "vscode-pets.petType": "cat",
+    "vscode-pets.position": "explorer",
+    // <---------------- Refactor Later ----------------->
+    "telemetry.telemetryLevel": "off",
 }
